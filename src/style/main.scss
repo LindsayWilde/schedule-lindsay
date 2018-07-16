@@ -2,7 +2,8 @@ $color-purple: #6F48CE;
 $color-blue: #32CBE8;
 
 @import 'library';
-
+@import 'libraryCourse';
+@import 'arrow';
 
 .home {
     height: 100vh;
