@@ -1,6 +1,9 @@
 $color-purple: #6F48CE;
 $color-blue: #32CBE8;
 
+@import 'library';
+
+
 .home {
     height: 100vh;
     width: 100vw;
@@ -10,9 +13,7 @@ $color-blue: #32CBE8;
     grid-template-rows: 1fr;
 }
 
-.library {
-    grid-column: library-s/library-e;
-}
+
 .schedule {
     grid-column: schedule-s/schedule-e;
     position: relative;
