@@ -13,7 +13,7 @@ class Library extends Component {
     renderCouses() {
         const data = this.props.courses
         return data.map((course, index) => {
-            return <LibraryCourse key={index}/>
+            return <LibraryCourse {...course} key={index}/>
         })
     }
 
