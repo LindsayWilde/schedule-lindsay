@@ -11,9 +11,10 @@ class LibraryCourse extends Component {
         return (
             <div className="library-course">
                 <div className="library-course__title-check">
-                    <label className="library-course__title">{this.props.title}}</label>
+                    <label className="library-course__title">{this.props.title}</label>
                     { Icon('fas fa-check', 'library-course__icon') }
                 </div>
+                <div className="library-course__line"></div>
                 <Arrow className='library-course__arrow'/>
                 <Action onClick={() => this.props.toggledEnrolled(this.props.id)} className="library-course__action" />
 
