@@ -9,9 +9,11 @@ class Schedule extends Component {
 
     renderCouses() {
         const data = this.props.courses
-        
+
         return data.map((course, index) => {
-            return <ScheduleCourse {...course} key={index}/>
+            if(course.enrolled){
+                return <ScheduleCourse {...course} key={index}/>
+            }
         })
     }
 
@@ -19,7 +21,7 @@ class Schedule extends Component {
         return (
             <div className="schedule">
                 <h1 className="schedule__title">My Schedule</h1>
-
+                { this.renderCouses() }
                 <ProgressTracker />
                 <Gradient />
             </div>
