@@ -28,11 +28,11 @@ class LibraryCourse extends Component {
   }.bind(this);
 
   handleCallback = function(status) {
-      if(!status){
-          document.getElementById('library-course').classList.add('library-course-selected');
-      }else {
-          document.getElementById('library-course').classList.remove('library-course-selected');
-      }
+    if(!status) {
+      document.getElementById('library-course').classList.add('library-course-selected');
+    } else {
+      document.getElementById('library-course').classList.remove('library-course-selected');
+    }
     this.setState({ status })
   }.bind(this)
 
@@ -50,8 +50,9 @@ class LibraryCourse extends Component {
           className="library-course__arrow"
         />
         <Action
-          onClick={() => this.props.toggleEnrolled(this.props.id)}
-          className="library-course__action"
+            id={this.props.id}
+            onClick={() => this.props.toggleEnrolled(this.props.id)}
+            className="library-course__action"
         />
         {this.renderDescription()}
       </div>
