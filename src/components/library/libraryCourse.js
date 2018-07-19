@@ -29,7 +29,7 @@ class LibraryCourse extends Component {
       document.getElementById(this.id).classList.remove('library-course-selected');
     }
     this.setState({
-        status, 
+        status,
         height
      })
   }.bind(this)
